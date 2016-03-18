@@ -18,5 +18,6 @@ from django.conf.urls import url
 from wmlapp import views
 
 urlpatterns = [
-    url(r'^$', views.index)
+    url(r'^$', views.index),
+    url(r'^cn$', views.cn)
 ]
