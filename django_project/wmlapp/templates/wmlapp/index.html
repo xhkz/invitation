@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <title>Xin & Kun</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.8/jquery.fullPage.min.css"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.8/jquery.fullPage.min.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCeecAE731RXOqPb_b3VtHbZZpw-Ggq-Xs"></script>
+    <script src="{% static 'js/particles.min.js' %}"></script>
+    <script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+</head>
+<body>
+<div id="particles-js"></div>
+<div id="fullpage">
+    <div class="section">
+        <img src="{% static 'img/flower.png' %}" alt="flower" class="center"/>
+        <img src="{% static 'img/diamond_tie.png' %}" alt="diamond tie" class="center"/>
+    </div>
+    <div class="section">
+        <div class="title">
+            <h4>THE MARRIAGE OF</h4>
+        </div>
+        <h1>Xin Huang</h1>
+        <h1>and</h1>
+        <h1>Kun Zhang</h1>
+    </div>
+    <div class="section">
+        <img src="{% static 'img/heart.png' %}" alt="heart" class="center"/>
+        <h3>SUNDAY</h3>
+        <h3>THE FIRST OF MAY</h3>
+        <h3>TWELVE O'CLOCK</h3>
+        <h4 class="countdown"></h4>
+    </div>
+    <div class="section location">
+        <h3>Riva St Kilda</h3>
+        <h5>42B Marine Parade, Elwood VIC 3184</h5>
+        <div id="map"></div>
+    </div>
+</div>
+<div class="arrow bounce"></div>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
