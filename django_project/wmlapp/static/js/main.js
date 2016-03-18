@@ -4,9 +4,11 @@ function init_map() {
     var marker_pos = {lat: -37.875448, lng: 144.975045};
     var center_pos = {lat: -37.875448, lng: 144.975545};
 
+    var width = $(window).outerWidth();
+
     map = new google.maps.Map(document.getElementById('map'), {
         center: center_pos,
-        zoom: 18,
+        zoom: width < 480 ? 15 : 18,
         disableDefaultUI: true,
         styles: [
             {
@@ -47,10 +49,18 @@ function init_map() {
         ]
     });
 
+    var image = {
+        url: 'static/img/heart-marker.png',
+        scaledSize: new google.maps.Size(
+            width < 480 ? 25 : 50,
+            width < 480 ? 27 : 54
+        )
+    };
+
     new google.maps.Marker({
         position: marker_pos,
         map: map,
-        icon: 'static/img/heart-marker.png'
+        icon: image
     });
 }
 

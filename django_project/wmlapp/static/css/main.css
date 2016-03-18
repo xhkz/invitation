@@ -8,25 +8,6 @@ body {
     position: relative;
 }
 
-h1 {
-    font-size: 9em;
-    font-family: 'Monsieur La Doulaise', cursive;
-    margin: 0 auto;
-    font-weight: 400;
-}
-
-h3 {
-    font-size: 3em;
-}
-
-h4 {
-    font-size: 2.5em;
-}
-
-h5 {
-    font-size: 2em;
-}
-
 h1, h2, h3, h4, h5 {
     color: #FFFFFF;
     font-weight: 400;
@@ -36,7 +17,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 120px;
 }
 
-@media screen and (min-width: 990px) {
+@media only screen and (min-device-width: 480px) {
     h1 {
         font-size: 6em;
         font-family: 'Monsieur La Doulaise', cursive;
@@ -56,15 +37,48 @@ h1, h2, h3, h4, h5 {
     }
 
     img.center {
+        margin: 0 auto 80px;
         max-width: 120px;
         height: auto;
     }
+
+    .location h3, .location h5 {
+        margin-bottom: 80px;
+    }
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 4em;
+        font-family: 'Monsieur La Doulaise', cursive;
+        margin: 0 auto;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    .title {
+        margin-bottom: 12%;
+    }
+
     img.center {
-        max-width: 176px;
+        margin: 0 auto 10%;
+        max-width: 25%;
         height: auto;
+    }
+
+    .location h3, .location h5 {
+        margin-bottom: 10%;
     }
 }
 
@@ -73,7 +87,6 @@ h1, h2, h3, h4, h5 {
 }
 
 img.center {
-    margin: 0 auto 80px;
     display: block;
 }
 
@@ -81,10 +94,6 @@ img.center {
     height: 100%;
     margin: 0;
     padding: 0;
-}
-
-.location h3, .location h5 {
-    margin-bottom: 80px;
 }
 
 #map {
