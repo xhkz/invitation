@@ -14,10 +14,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .title {
-    margin-bottom: 120px;
+    margin-bottom: 5%;
 }
 
-@media only screen and (min-device-width: 480px) {
+@media only screen and (min-width: 480px) {
     h1 {
         font-size: 6em;
         font-family: 'Monsieur La Doulaise', cursive;
@@ -37,13 +37,13 @@ h1, h2, h3, h4, h5 {
     }
 
     img.center {
-        margin: 0 auto 80px;
+        margin: 0 auto;
         max-width: 120px;
         height: auto;
     }
 
-    .location h3, .location h5 {
-        margin-bottom: 80px;
+    .flower {
+        padding-bottom: 4%;
     }
 }
 
@@ -72,9 +72,13 @@ h1, h2, h3, h4, h5 {
     }
 
     img.center {
-        margin: 0 auto 10%;
+        margin: 0 auto;
         max-width: 25%;
         height: auto;
+    }
+
+    .flower {
+        padding-bottom: 10%;
     }
 
     .location h3, .location h5 {
