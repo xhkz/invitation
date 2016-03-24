@@ -158,4 +158,8 @@ $(document).ready(function () {
     $('.countdown').countdown('2016/05/01 12:00:00', function (event) {
         $(this).html(event.strftime('%D day%!D %H:%M:%S'));
     });
+
+    $('.arrow').on('click', function () {
+        $.fn.fullpage.moveSectionDown();
+    });
 });
