@@ -1,7 +1,6 @@
 body {
-    /*background: radial-gradient(ellipse farthest-corner at center bottom, #6BEACE, #2E9AA4);*/
     background-color: #00CACA;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .section {
@@ -9,19 +8,24 @@ body {
     position: relative;
 }
 
-h1, h2, h3, h4, h5 {
+h2, h3, h4, h5 {
     color: #FFFFFF;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .title {
     margin-bottom: 5%;
 }
 
+h1 {
+    color: #FFFFFF;
+    font-family: 'Pinyon Script', cursive;
+    font-weight: 400;
+}
+
 @media only screen and (min-width: 480px) {
     h1 {
         font-size: 6em;
-        font-family: 'Monsieur La Doulaise', cursive;
         margin: auto 55px;
     }
 
@@ -51,9 +55,7 @@ h1, h2, h3, h4, h5 {
 @media only screen and (max-width: 480px) {
     h1 {
         font-size: 4em;
-        font-family: 'Monsieur La Doulaise', cursive;
         margin: 0 auto;
-        font-weight: 400;
     }
 
     h3 {
@@ -85,10 +87,6 @@ h1, h2, h3, h4, h5 {
     .location h3, .location h5 {
         margin-bottom: 10%;
     }
-}
-
-.countdown {
-    font-family: sans-serif;
 }
 
 img.center {
