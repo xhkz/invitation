@@ -145,7 +145,8 @@ var arrow = document.querySelector('.arrow');
 $(document).ready(function () {
     $('#fullpage').fullpage({
         normalScrollElements: '#map',
-        controlArrows: false,
+        scrollingSpeed: 500,
+        controlArrows: true,
         slidesNavigation: true,
         afterLoad: function (anchorLink, index) {
             if (index == 4 && map == undefined) {

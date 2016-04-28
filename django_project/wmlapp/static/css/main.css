@@ -4,6 +4,24 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.seating h3 {
+    text-decoration: underline;
+}
+
+.fp-controlArrow {
+    margin-top: -4px;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 10px;
+    border-width: 6px 8px 6px 0;
+}
+
+.fp-controlArrow.fp-next {
+    right: 10px;
+    border-width: 6px 0 6px 8px;
+}
+
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
     background: #FFFFFF;
 }
@@ -104,7 +122,7 @@ img.center {
 }
 
 #map {
-    height: 60%;
+    height: 50%;
     width: 92%;
     margin: 0 auto;
 }
