@@ -145,11 +145,13 @@ var arrow = document.querySelector('.arrow');
 $(document).ready(function () {
     $('#fullpage').fullpage({
         normalScrollElements: '#map',
+        controlArrows: false,
+        slidesNavigation: true,
         afterLoad: function (anchorLink, index) {
-            if (index == 3 && map == undefined) {
+            if (index == 4 && map == undefined) {
                 init_map();
             }
-            arrow.style.display = (index == 4) ? 'none' : 'block';
+            arrow.style.display = (index == 5) ? 'none' : 'block';
         }
     });
 
